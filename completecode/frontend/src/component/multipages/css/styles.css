@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background-color: #ddd;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  
+  .app-bar {
+    background-color: #1B1F21;
+    padding: 15px 15px;
+  }
+  
+  .app-bar-title {
+    font-family: 'Bangers', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    word-spacing: 6px;
+  }
+  
+  .app-section {
+    margin-top: 2rem;
+  }
+  
+  .card-selector {
+    width: 50%;
+  }
+  
+  .card-selector-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .angry-joe {
+    color: #999;  
+  }
+  
+  .angry-joe:hover {
+    color: crimson;
+  }
+  
+  .ico-angry-joe {
+    font-size: 5rem;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .top-margin {
+    margin-top: 5rem;
+  }
+  
+  .top-margin-small {
+    margin-top: 2rem; 
+  }

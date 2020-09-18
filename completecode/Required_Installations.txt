@@ -1,0 +1,4 @@
+1. Install Python 3.7.3
+2. Install pip 19.0.3
+3. Python with flask: pip install flask python-dotenv
+4. To run flask: Flask run

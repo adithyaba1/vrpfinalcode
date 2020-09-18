@@ -1,0 +1,12 @@
+.head1{
+    background-color: #128496;
+    height:50px;
+  }
+  .leftside, .rightside{
+    height: 100vh;
+    width: 100%;
+  
+  }
+  .container{
+    margin: inherit;
+  }
