@@ -22,6 +22,7 @@ class Header extends React.Component {
          };
 
         this.toggleDiv = this.toggleDiv.bind(this);
+        this.callApi = this.callApi.bind(this)
     }
 
     toggleDiv = () => {
@@ -41,6 +42,7 @@ class Header extends React.Component {
     .then(data => {
         this.setState({deps:data});
     })
+    alert("Calculated result")
 
     }
     toggleMe=(value)=>{
@@ -60,12 +62,12 @@ class Header extends React.Component {
                   <table>
                     <tbody>
                       <tr>
-                      <button  className="btn btn-primary" type="submit" style={{"border-radius":"5px"}} onClick={this.callApi}>Calculate Routes</button>&nbsp;
-                        <td>
-                       <button  className="btn btn-primary" type="submit" style={{"border-radius":"5px"}} onClick={()=>this.toggleMe('result')}>Result</button>&nbsp;
-                       <button className="btn btn-primary" type="submit" style={{"border-radius":"5px"}} onClick={()=>this.toggleMe('stat')}>stations</button>&nbsp;
-                       <button className="btn btn-primary" type="submit" style={{"border-radius":"5px"}} onClick={()=>this.toggleMe('order')}>trip</button>&nbsp;
-                       <button className="btn btn-primary" type="submit" style={{"border-radius":"5px"}} onClick={()=>this.toggleMe('flet')}>Fleet</button>&nbsp;
+                      <td>
+                      <button  className="btn btn-primary" type="submit" style={{"borderRadius":"5px"}} onClick={this.callApi}>Calculate Routes</button>&nbsp;
+                       <button  className="btn btn-primary" type="submit" style={{"borderRadius":"5px"}} onClick={()=>this.toggleMe('result')}>Result</button>&nbsp;
+                       <button className="btn btn-primary" type="submit" style={{"borderRadius":"5px"}} onClick={()=>this.toggleMe('stat')}>stations</button>&nbsp;
+                       <button className="btn btn-primary" type="submit" style={{"borderRadius":"5px"}} onClick={()=>this.toggleMe('order')}>trip</button>&nbsp;
+                       <button className="btn btn-primary" type="submit" style={{"borderRadius":"5px"}} onClick={()=>this.toggleMe('flet')}>Fleet</button>&nbsp;
                         </td>
                         
                       </tr>

@@ -1,12 +1,16 @@
 import React from "react";
-//import './style.css';
-import { Link } from 'react-router-dom';
-import { DropdownButton,Dropdown} from 'react-bootstrap';
+import './style.css';
+//import { Link } from 'react-router-dom';
+//import { DropdownButton,Dropdown} from 'react-bootstrap';
+import Map from './Map';
 
-class Header extends React.Component {
+class Emptymap extends React.Component {
     constructor(props){
         super(props)
-        this.state = { show: true };
+        this.state = { 
+          value: ' ',
+          show :true
+         };
 
         this.toggleDiv = this.toggleDiv.bind(this);
     }
@@ -15,35 +19,23 @@ class Header extends React.Component {
         const {show} = this.state;
         this.setState ({show : show})
     }
-
+    change = (event) =>{
+      this.setState({value: event.target.value});
+  }
 
   render() {
     return (
-     <div className="">
-       <div className="">
-         <div className="Col">
-           <div className="Row">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <DropdownButton variant="outline-secondary" title="Select View" id="input-group-dropdown-1">
-                          <Dropdown.Item href ="/mapview">Map View</Dropdown.Item>
-                          <Dropdown.Item href ="/listview">List View</Dropdown.Item>
-                          </DropdownButton>
-                        </td>
-                        
-                      </tr>
-                    </tbody>
-                  </table>
-           </div>
-           </div>         
+     <div>
+        <select id="lang" onChange={this.change} value={this.state.value}>
+              <option></option>
+              <option value="select">Map</option>
+              
+           </select>
+           <p>{this.state.value === "select" && <Map></Map>}</p>
+    </div>
          
-     </div>
-     </div>
-    
     );
   }
 }
 
-export default Header;
+export default Emptymap;

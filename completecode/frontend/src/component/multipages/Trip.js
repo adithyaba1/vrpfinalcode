@@ -33,7 +33,7 @@ class Trip extends React.Component {
   // Delete the front-end trip values
   deleteTrip(depid) {
     if(window.confirm('Are you sure?')){
-      fetch('http://localhost:5000/api/vtrip/'+depid,{
+      fetch('http://localhost:4000/api/vtrip/'+depid,{
         method:'DELETE',
         header:{'Accept':'application/json',
         'Content-Type':'application/json'
@@ -87,10 +87,10 @@ class Trip extends React.Component {
                   {deps.map(dep=>
                   <tr key={dep._id}>
                     <td>{dep.Tripname}</td>
-                    <div><tr>
+                    
                       <td>{dep.Hour}h</td>
                       <td>{dep.Minute}m</td>
-                    </tr></div>
+                    
                     <td>{dep.Noofpeople}</td>
                     <td>{dep.Endlocation}</td>
                     <td>

@@ -15,7 +15,7 @@ class ListView extends React.Component{
   render(){
     //console.log("ppppp",this.props);
     const result = this.props.data || {};
-    console.log("result",result.routeaddress)
+    //console.log("result",result.routeaddress)
     return(
       <div>
         <Modal

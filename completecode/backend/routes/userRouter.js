@@ -33,6 +33,8 @@ router.post("/register", async (req, res) => {
     const passwordHash = await bcrypt.hash(password, salt);
 
     const newUser = new User({
+      firstname,
+      lastname,
       email,
       password: passwordHash
     });

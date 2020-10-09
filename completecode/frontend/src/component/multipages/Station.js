@@ -35,7 +35,7 @@ class Station extends React.Component{
       fetch('http://localhost:5000/api/station/'+depid,{
         method:'DELETE',
         header:{'Accept':'application/json',
-        'Content-Type':'application/json'
+        'Content-Type':'application/json',
         }
       })
     }

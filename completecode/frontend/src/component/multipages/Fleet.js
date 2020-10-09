@@ -73,7 +73,7 @@ triggerChildAlert(){
                  <tbody>
                    <tr>
                      <td>
-                     <button  className="btn btn-outline-primary btn-sm" style={{"border-radius":"10px"}} onClick={()=>this.setState({addBook:true})}>Add Vehicle</button>
+                     <button  className="btn btn-outline-primary btn-sm" style={{"borderRadius":"10px"}} onClick={()=>this.setState({addBook:true})}>Add Vehicle</button>
                          <AddVehicle show={this.state.addBook} onHide={addBookClose}/>
                      </td>
                     
@@ -103,7 +103,7 @@ triggerChildAlert(){
                 <tr  key={fleet._id}>
                 <td>
                 
-                  <button  style={{"border-radius":"10px"}} onClick={this.props.getAlert}>{fleet.vechicleNumber}</button></td>
+                  <button  style={{"borderRadius":"10px"}} onClick={this.props.getAlert}>{fleet.vechicleNumber}</button></td>
                
                 <td>{fleet.vehicle_address}</td>
                 <td>{fleet.vechiclecapacity}</td>
